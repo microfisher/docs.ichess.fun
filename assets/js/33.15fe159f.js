@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[33],{401:function(t,s,n){"use strict";n.r(s);var e={props:["title"]},i=n(0),l=Object(i.a)(e,(function(){return(0,this._self._c)("p",{staticClass:"section-header"},[this._v("\n  "+this._s(this.title)+"\n")])}),[],!1,null,null,null);s.default=l.exports}}]);
