@@ -2,7 +2,7 @@
 .vscode
 
 # dependencies
-*/node_modules
+node_modules
 
 # production
-*/src/.vuepress/dist
+src/.vuepress/dist
