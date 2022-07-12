@@ -2,7 +2,7 @@
   <main aria-labelledby="main-title" class="home">
     <header class="hero">
         <img :src="$page.frontmatter.heroImage" alt="hero"> 
-        <h1 id="main-title">Kele Pool</h1> 
+        <h1 id="main-title">Rocket Pool</h1> 
         <p class="description">
             {{ $page.frontmatter.tagline }}
         </p> 
