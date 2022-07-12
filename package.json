@@ -1,0 +1,30 @@
+{
+  "name": "kelepool-docs",
+  "version": "0.9.0",
+  "description": "Kele Pool Documentation - Decentralised Proof of Stake Protocol",
+  "main": "index.js",
+  "authors": {
+    "name": "Wesley",
+    "email": "service@kelepool.com"
+  },
+  "repository": "https://github.com/kelepooloffice/docs.kelepool.com",
+  "scripts": {
+    "nvm": "nodever=$(<.nvmrc) && node -v | grep -q \"v$nodever\" && echo \"Correct node version\" || echo '\u001b[31mWARNING: UNSUPPORTED NODE VERSION\u001b[0m\n'",
+    "dev": "npm run nvm && vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "markdown-it-include": "^2.0.0",
+    "node-sass": "^4.0.0",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-element-tabs": "^0.2.8",
+    "vuepress-plugin-zooming": "^1.1.8",
+    "vuepress-theme-default-prefers-color-scheme": "^2.0.0"
+  },
+  "dependencies": {
+    "markdown-it-html5-embed": "^1.0.0",
+    "vuepress-plugin-code-copy": "^1.0.6",
+    "yarn": "^1.22.11"
+  }
+}

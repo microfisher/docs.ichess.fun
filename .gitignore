@@ -5,12 +5,4 @@
 */node_modules
 
 # production
-*/build
-
-# generated files
-.docusaurus
-.cache-loader
-
-*/npm-debug.log
-*/yarn-debug.log
-*/yarn-error.log
+*/src/.vuepress/dist
