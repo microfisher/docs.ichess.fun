@@ -1,36 +1,40 @@
+<script setup>
+import HomeContent from '@theme/HomeContent.vue'
+import HomeFooter from '@theme/HomeFooter.vue'
+import Navbar from '@theme/Navbar.vue'
+
+</script>
+
 <template>
-  <main aria-labelledby="main-title" class="home">
-    <header class="hero">
-        <img :src="$page.frontmatter.heroImage" alt="hero"> 
-        <h1 id="main-title">Rocket Pool</h1> 
-        <p class="description">
-            {{ $page.frontmatter.tagline }}
-        </p> 
-        <p class="action">
-            <a :href="$page.frontmatter.actionLink" class="nav-link action-button">{{ $page.frontmatter.actionText }}</a>
-        </p>
-    </header> 
-    <div class="features">
-        <div class="feature" v-for="feat in $page.frontmatter.features">
-            <h2><a v-bind:href="feat.link">{{ feat.title }}</a></h2>
-            <p>{{ feat.details }}</p>
+  <main class="home">
+    <Navbar />
+    <div>
+        <div class="main-items"><img src="/images/logo-large.png" class="main-logo" alt="Kele Pool"> </div>
+        <div class="social-items">
+          <div><a href="" target="_blank"><img src="/images/telegram.png" class="social-logo" alt="telegram"> </a></div>
+          <div><a href="" target="_blank"><img src="/images/medium.png" class="social-logo" alt="medium"> </a></div>
+          <div><a href="" target="_blank"><img src="/images/twitter.png" class="social-logo" alt="twitter"> </a></div>
+          <div><a href="" target="_blank"><img src="/images/youtube.png" class="social-logo" alt="youtube"> </a></div>
+          <div><a href="" target="_blank"><img src="/images/facebook.png" class="social-logo" alt="facebook"> </a></div>
         </div>
-        <div class="theme-default-content custom content__default"></div> 
-    </div>
-    <div class="footer">
-        {{ $page.frontmatter.footer }}
-    </div>
+        <div class="line"></div>
+        <!-- <div class="feature-items">
+          <div style="width:260px;height:314px;border:1px solid #F9F9F9;">
+            <div><img src="/images/tutorials.png" class="feature-logo" style="width:100%;height:100%;max-width:260px;max-height:100px;"></div>
+            <div style="padding:10px">
+              <div>
+
+              </div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div> -->
+    </div> 
+
+    <HomeContent />
   </main>
 </template>
-
-<style scoped>
-
-    .feature > h2 {
-        margin-block-end: 0;
-    }
-
-    .feature > p {
-        margin-block-start: 6px;
-    }
-
-</style>
