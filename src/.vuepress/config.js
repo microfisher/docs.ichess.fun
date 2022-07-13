@@ -26,6 +26,7 @@ module.exports = {
   },
   prev: true,
   next: true,
+  colorMode:'light',
   theme: defaultTheme({
     docsDir: 'src',
     docsBranch: 'main',
