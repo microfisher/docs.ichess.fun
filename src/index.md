@@ -1,4 +1,4 @@
 ---
 home: false
-layout: Home
+layout: home
 ---
