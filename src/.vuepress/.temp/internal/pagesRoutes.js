@@ -15,9 +15,9 @@ export const pagesRoutes = [
   ["v-4544d865","/developers/usage/js/js.html",{"title":"Javascript"},["/developers/usage/js/js","/developers/usage/js/js.md"]],
   ["v-103d2468","/zh/guides/testnet/overview.html",{"title":"Practicing with the Test Network"},["/zh/guides/testnet/overview","/zh/guides/testnet/overview.md"]],
   ["v-0c243958","/zh/guides/testnet/upgrading.html",{"title":"Migrating the Smartnode from Previous Beta Tests"},["/zh/guides/testnet/upgrading","/zh/guides/testnet/upgrading.md"]],
+  ["v-1ce810d6","/zh/developers/usage/js/js.html",{"title":"Javascript"},["/zh/developers/usage/js/js","/zh/developers/usage/js/js.md"]],
   ["v-4d2c3f72","/zh/developers/usage/contracts/contracts.html",{"title":"Smart Contracts"},["/zh/developers/usage/contracts/contracts","/zh/developers/usage/contracts/contracts.md"]],
   ["v-178aa98a","/zh/developers/usage/contracts/deposits.html",{"title":"Deposits"},["/zh/developers/usage/contracts/deposits","/zh/developers/usage/contracts/deposits.md"]],
   ["v-f3a82efe","/zh/developers/usage/contracts/design.html",{"title":"Contract Design & Upgradability"},["/zh/developers/usage/contracts/design","/zh/developers/usage/contracts/design.md"]],
-  ["v-1ce810d6","/zh/developers/usage/js/js.html",{"title":"Javascript"},["/zh/developers/usage/js/js","/zh/developers/usage/js/js.md"]],
   ["v-3706649a","/404.html",{"title":""},["/404"]],
 ]

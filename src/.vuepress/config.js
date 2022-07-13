@@ -7,11 +7,6 @@ const { registerComponentsPlugin } = require('@vuepress/plugin-register-componen
 module.exports = {
   lang: 'zh-CN',
   title: 'Kele Pool',
-  prev: true,
-  next: true,
-  colorMode:'light',
-  logo: '/images/logo.png',
-  logoDark: '/images/logo.png',
   description: 'Kele Pool Documentation - Decentralised Proof of Stake Protocol',
   head: [
     ['meta', { name: '', content: '' }],
@@ -29,10 +24,15 @@ module.exports = {
       description: '可乐矿池文档 - Pow & Pos 一站式质押管理平台',
     },
   },
+  prev: true,
+  next: true,
   theme: defaultTheme({
     docsDir: 'src',
     docsBranch: 'main',
     repo: 'kelepooloffice/docs.kelepool.com',
+    logo: '/images/logo.png',
+    colorMode:'light',
+    colorModeSwitch:false,
     editLink:true,
     contributors:false,
     lastUpdated: false,

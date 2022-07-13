@@ -31,14 +31,14 @@ export const pagesData = {
   "v-103d2468": () => import(/* webpackChunkName: "v-103d2468" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/zh/guides/testnet/overview.html.js").then(({ data }) => data),
   // path: /zh/guides/testnet/upgrading.html
   "v-0c243958": () => import(/* webpackChunkName: "v-0c243958" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/zh/guides/testnet/upgrading.html.js").then(({ data }) => data),
+  // path: /zh/developers/usage/js/js.html
+  "v-1ce810d6": () => import(/* webpackChunkName: "v-1ce810d6" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/zh/developers/usage/js/js.html.js").then(({ data }) => data),
   // path: /zh/developers/usage/contracts/contracts.html
   "v-4d2c3f72": () => import(/* webpackChunkName: "v-4d2c3f72" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/zh/developers/usage/contracts/contracts.html.js").then(({ data }) => data),
   // path: /zh/developers/usage/contracts/deposits.html
   "v-178aa98a": () => import(/* webpackChunkName: "v-178aa98a" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/zh/developers/usage/contracts/deposits.html.js").then(({ data }) => data),
   // path: /zh/developers/usage/contracts/design.html
   "v-f3a82efe": () => import(/* webpackChunkName: "v-f3a82efe" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/zh/developers/usage/contracts/design.html.js").then(({ data }) => data),
-  // path: /zh/developers/usage/js/js.html
-  "v-1ce810d6": () => import(/* webpackChunkName: "v-1ce810d6" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/zh/developers/usage/js/js.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/wesley/Documents/GitHub/docs.ichess.fun/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }
