@@ -21,17 +21,17 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Guides Overview",
-    "headers": [],
-    "path": "/en/guides/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "开发者文档",
     "headers": [],
     "path": "/zh/developers/",
     "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Guides Overview",
+    "headers": [],
+    "path": "/en/guides/",
+    "pathLocale": "/",
     "extraFields": []
   },
   {
@@ -56,7 +56,57 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "How to use smart contract to staking?",
+    "title": "How to query user staking information?",
+    "headers": [
+      {
+        "level": 2,
+        "title": "API Node",
+        "slug": "api-node",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "User Staking Overview",
+        "slug": "user-staking-overview",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Platform Data Overview",
+        "slug": "platform-data-overview",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "User Earnings History",
+        "slug": "user-earnings-history",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Validator Node Status",
+        "slug": "validator-node-status",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "User Operation History",
+        "slug": "user-operation-history",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Generate Validator Public Key",
+        "slug": "generate-validator-public-key",
+        "children": []
+      }
+    ],
+    "path": "/en/developers/ethereum/api/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "How to use smart contract to stake?",
     "headers": [
       {
         "level": 2,
@@ -113,57 +163,14 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "",
-    "headers": [
-      {
-        "level": 2,
-        "title": "API query node",
-        "slug": "api-query-node",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "User Staking Overview",
-        "slug": "user-staking-overview",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Platform Data Overview",
-        "slug": "platform-data-overview",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Earnings History List",
-        "slug": "earnings-history-list",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Node Status List",
-        "slug": "node-status-list",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "User operation history",
-        "slug": "user-operation-history",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "Generate validator public key",
-        "slug": "generate-validator-public-key",
-        "children": []
-      }
-    ],
-    "path": "/en/developers/ethereum/api/",
+    "title": "API Reference",
+    "headers": [],
+    "path": "/en/developers/mina/api/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "",
+    "title": "What is ETH2.0 staking?",
     "headers": [
       {
         "level": 2,
@@ -186,20 +193,6 @@ export const searchIndex = [
     ],
     "path": "/en/developers/ethereum/introductions/",
     "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "API Reference",
-    "headers": [],
-    "path": "/en/developers/mina/api/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
-    "title": "API Reference",
-    "headers": [],
-    "path": "/zh/developers/mina/api/",
-    "pathLocale": "/zh/",
     "extraFields": []
   },
   {
@@ -313,6 +306,13 @@ export const searchIndex = [
       }
     ],
     "path": "/zh/developers/ethereum/api/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "API Reference",
+    "headers": [],
+    "path": "/zh/developers/mina/api/",
     "pathLocale": "/zh/",
     "extraFields": []
   },
