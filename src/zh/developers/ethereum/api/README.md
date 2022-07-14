@@ -14,9 +14,14 @@
 
 ## API授权认证
 
-可乐会为每个第三方分配一个长时间有效的签名私钥 `authority_key` 以及 权限 `token`，第三方可以用这两个key进行签名以及数据来源的确认。
+第三方开发人员需要联系可乐矿池，申请一个长时间有效的签名 `authority_key` 以及 `token`，第三方可以用这两个key进行签名以及数据来源的确认。
 
-使用方式：
+### 1.授权步骤
+- 联系可乐矿池申请`authority_key` 以及 `token`
+- 如果用户是第一次调用可乐矿池API，则需提前调用`/user/v2/anonymouslogin` 进行用户地址注册
+- 调用可乐矿池每个接口时使用 `authority_key` 以及 `token` 签名并放入Header中验证
+
+### 2.使用方式
 
 - 在请求的 header 中添加 Kele-ThirdParty-Authority = `token`
 - 在请求的 header 中添加 Kele-ThirdParty-Sign = `sign`
@@ -24,7 +29,7 @@
     - 将请求参数按字典序升序排列，并用 '&' 前后拼接
     - 用 `hmac_blake2b` 以 `authority_key` 进行签名，得到 `sign`
 
-示例代码:
+### 3.示例代码
 ```python
 import hashlib
 import hmac
@@ -54,6 +59,37 @@ headers = {'Content-Type': 'application/json', 'Accept':'application/json',
 r_json = requests.get(url,params=params,headers=headers)
 print(r_json.text)
 
+```
+
+## 用户地址注册
+#### POST [/user/v2/anonymouslogin](https://test-api.kelepool.com/user/v2/anonymouslogin)
+
+此接口用于第三方的用户地址注册，主要用于统计第三方各个用户的质押数量等，只需在第一次使用可乐矿池API时调用，之后无需再次调用。
+
+> 请求参数：
+> - `payee_addr` ：用户质押钱包地址
+> - `token` ：质押代币（eth）
+> - `source` ：数据来源便于商务合作统计（例如：onekey）
+
+```bash
+https://test-api.kelepool.com/user/v2/anonymouslogin
+
+{
+    "payee_addr":"0xA49F98416aa4B158c2e752FD8031Fb295D330B22",
+    "token":"eth",
+    "source":"onekey"
+}
+```
+
+> 请求返回值：
+> - 判断`code`为0即表示成功，反之则注册失败
+> - 返回`token`并不是鉴权所需的字段，无需理会
+> - 返回的其他字段无需理会，不作为注册地址使用
+```bash
+{
+   "code":0,
+   "message":"success"
+}
 ```
 
 ## 用户质押总览
