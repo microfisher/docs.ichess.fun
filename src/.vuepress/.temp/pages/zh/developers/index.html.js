@@ -1,4 +1,4 @@
-export const data = JSON.parse("{\"key\":\"v-1da60d3e\",\"path\":\"/zh/developers/\",\"title\":\"Developer Documentation\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{},\"filePathRelative\":\"zh/developers/README.md\"}")
+export const data = JSON.parse("{\"key\":\"v-1da60d3e\",\"path\":\"/zh/developers/\",\"title\":\"开发者文档\",\"lang\":\"zh-CN\",\"frontmatter\":{},\"excerpt\":\"\",\"headers\":[],\"git\":{},\"filePathRelative\":\"zh/developers/README.md\"}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
