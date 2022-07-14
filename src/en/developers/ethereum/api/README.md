@@ -12,6 +12,8 @@ Cola Mining Pool has opened all ETH2.0 revenue query interfaces. Developers can 
 > - `code` : an integer number, equal to 0 for success, greater than 0 for failure
 > - `message` : the message to return after failure
 
+## Authorize
+
 ## User Staking Overview
 #### GET [/eth2/v2/miner/dashboard](https://test-api.kelepool.com/eth2/v2/miner/dashboard?address=0x5dd3bd08cbc8498c8640abc26d19480219bb0606&interval=day)
 

@@ -14,17 +14,38 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "Developer Documentation",
+    "title": "开发者文档",
+    "headers": [],
+    "path": "/zh/developers/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Pow",
+    "headers": [],
+    "path": "/zh/wiki/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "总览",
+    "headers": [],
+    "path": "/zh/guides/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "Developer documentation",
     "headers": [],
     "path": "/en/developers/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "开发者文档",
+    "title": "Pow",
     "headers": [],
-    "path": "/zh/developers/",
-    "pathLocale": "/zh/",
+    "path": "/en/wiki/",
+    "pathLocale": "/",
     "extraFields": []
   },
   {
@@ -35,9 +56,16 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "总览",
+    "title": "Pow",
     "headers": [],
-    "path": "/zh/guides/",
+    "path": "/zh/wiki/pos/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "文章百科",
+    "headers": [],
+    "path": "/zh/wiki/pow/",
     "pathLocale": "/zh/",
     "extraFields": []
   },
@@ -56,12 +84,185 @@ export const searchIndex = [
     "extraFields": []
   },
   {
+    "title": "文章百科",
+    "headers": [],
+    "path": "/en/wiki/pow/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "Pow",
+    "headers": [],
+    "path": "/en/wiki/pos/",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "API Reference",
+    "headers": [],
+    "path": "/zh/developers/mina/api/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "如何调用智能合约质押？",
+    "headers": [
+      {
+        "level": 2,
+        "title": "1.合约简介",
+        "slug": "_1-合约简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "2.安装必要的库",
+        "slug": "_2-安装必要的库",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "3.获取合约ABI",
+        "slug": "_3-获取合约abi",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "4.小额质押",
+        "slug": "_4-小额质押",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "5.大额质押",
+        "slug": "_5-大额质押",
+        "children": [
+          {
+            "level": 3,
+            "title": "（1）生成提款凭证",
+            "slug": "_1-生成提款凭证",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "（2）生成验证者公钥",
+            "slug": "_2-生成验证者公钥",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "（3）执行大额质押",
+            "slug": "_3-执行大额质押",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/zh/developers/ethereum/contracts/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "如何查询用户质押信息？",
+    "headers": [
+      {
+        "level": 2,
+        "title": "API查询节点",
+        "slug": "api查询节点",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "API授权认证",
+        "slug": "api授权认证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "用户质押总览",
+        "slug": "用户质押总览",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "平台数据总览",
+        "slug": "平台数据总览",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "收益历史列表",
+        "slug": "收益历史列表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "节点状态列表",
+        "slug": "节点状态列表",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "用户操作历史",
+        "slug": "用户操作历史",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "生成验证者公钥",
+        "slug": "生成验证者公钥",
+        "children": []
+      }
+    ],
+    "path": "/zh/developers/ethereum/api/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "什么是ETH2.0质押？",
+    "headers": [
+      {
+        "level": 2,
+        "title": "关于ETH2.0",
+        "slug": "关于eth2-0",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "大额质押",
+        "slug": "大额质押",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "小额质押",
+        "slug": "小额质押",
+        "children": []
+      }
+    ],
+    "path": "/zh/developers/ethereum/introductions/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
+    "title": "API Reference",
+    "headers": [],
+    "path": "/zh/developers/platon/api/",
+    "pathLocale": "/zh/",
+    "extraFields": []
+  },
+  {
     "title": "How to query user staking information?",
     "headers": [
       {
         "level": 2,
         "title": "API Node",
         "slug": "api-node",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "Authorize",
+        "slug": "authorize",
         "children": []
       },
       {
@@ -163,13 +364,6 @@ export const searchIndex = [
     "extraFields": []
   },
   {
-    "title": "API Reference",
-    "headers": [],
-    "path": "/en/developers/mina/api/",
-    "pathLocale": "/",
-    "extraFields": []
-  },
-  {
     "title": "What is ETH2.0 staking?",
     "headers": [
       {
@@ -198,155 +392,15 @@ export const searchIndex = [
   {
     "title": "API Reference",
     "headers": [],
-    "path": "/en/developers/platon/api/",
+    "path": "/en/developers/mina/api/",
     "pathLocale": "/",
     "extraFields": []
   },
   {
-    "title": "如何调用智能合约质押？",
-    "headers": [
-      {
-        "level": 2,
-        "title": "1.合约简介",
-        "slug": "_1-合约简介",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "2.安装必要的库",
-        "slug": "_2-安装必要的库",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "3.获取合约ABI",
-        "slug": "_3-获取合约abi",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "4.小额质押",
-        "slug": "_4-小额质押",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "5.大额质押",
-        "slug": "_5-大额质押",
-        "children": [
-          {
-            "level": 3,
-            "title": "（1）生成提款凭证",
-            "slug": "_1-生成提款凭证",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "（2）生成验证者公钥",
-            "slug": "_2-生成验证者公钥",
-            "children": []
-          },
-          {
-            "level": 3,
-            "title": "（3）执行大额质押",
-            "slug": "_3-执行大额质押",
-            "children": []
-          }
-        ]
-      }
-    ],
-    "path": "/zh/developers/ethereum/contracts/",
-    "pathLocale": "/zh/",
-    "extraFields": []
-  },
-  {
-    "title": "如何查询用户质押信息？",
-    "headers": [
-      {
-        "level": 2,
-        "title": "API查询节点",
-        "slug": "api查询节点",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "用户质押总览",
-        "slug": "用户质押总览",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "平台数据总览",
-        "slug": "平台数据总览",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "收益历史列表",
-        "slug": "收益历史列表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "节点状态列表",
-        "slug": "节点状态列表",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "用户操作历史",
-        "slug": "用户操作历史",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "生成验证者公钥",
-        "slug": "生成验证者公钥",
-        "children": []
-      }
-    ],
-    "path": "/zh/developers/ethereum/api/",
-    "pathLocale": "/zh/",
-    "extraFields": []
-  },
-  {
     "title": "API Reference",
     "headers": [],
-    "path": "/zh/developers/mina/api/",
-    "pathLocale": "/zh/",
-    "extraFields": []
-  },
-  {
-    "title": "什么是ETH2.0质押？",
-    "headers": [
-      {
-        "level": 2,
-        "title": "关于ETH2.0",
-        "slug": "关于eth2-0",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "大额质押",
-        "slug": "大额质押",
-        "children": []
-      },
-      {
-        "level": 2,
-        "title": "小额质押",
-        "slug": "小额质押",
-        "children": []
-      }
-    ],
-    "path": "/zh/developers/ethereum/introductions/",
-    "pathLocale": "/zh/",
-    "extraFields": []
-  },
-  {
-    "title": "API Reference",
-    "headers": [],
-    "path": "/zh/developers/platon/api/",
-    "pathLocale": "/zh/",
+    "path": "/en/developers/platon/api/",
+    "pathLocale": "/",
     "extraFields": []
   },
   {

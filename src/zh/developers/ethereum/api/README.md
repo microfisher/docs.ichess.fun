@@ -4,13 +4,57 @@
 
 ## API查询节点
 
-[Mainnet主网API：https://api.kelepool.com](https://api.kelepool.com)
+[可乐矿池Mainnet主网API：https://api.kelepool.com](https://api.kelepool.com)
 
-[Ropsten测试网API：https://test-api.kelepool.com](https://test-api.kelepool.com)
+[可乐矿池Ropsten测试网API：https://test-api.kelepool.com](https://test-api.kelepool.com)
 
 > 通用的请求返回结果：
 > - `code` ：整型数字，等于0表示成功，大于0表示失败
 > - `message` ：失败后返回的消息
+
+## API授权认证
+
+可乐会为每个第三方分配一个长时间有效的签名私钥 `authority_key` 以及 权限 `token`，第三方可以用这两个key进行签名以及数据来源的确认。
+
+使用方式：
+
+- 在请求的 header 中添加 Kele-ThirdParty-Authority = `token`
+- 在请求的 header 中添加 Kele-ThirdParty-Sign = `sign`
+    - 获取 `sign` 逻辑如下：
+    - 将请求参数按字典序升序排列，并用 '&' 前后拼接
+    - 用 `hmac_blake2b` 以 `authority_key` 进行签名，得到 `sign`
+
+示例代码:
+```python
+import hashlib
+import hmac
+import requests
+
+url = 'https://test-bxh5.kelepool.com/eth2/v1/getrewardkline'
+params = {
+  'unit' : 'hour',
+  'sub_uid' : 1,
+  'timezone' : "8",
+  'unitcount' : 1
+}
+
+sign_str = '&'.join(['%s=%s' % (k, params[k]) for k in sorted(params)])
+
+authority_key='c0406ea61xxxxxxxx42db838dxxxxxxxxa70'
+
+sign=hmac.new(authority_key.encode('utf-8'), sign_str.encode('utf-8'), digestmod=hashlib.blake2b).hexdigest()
+
+token='eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.xxxxxxxxxxxfcT_iuJqABpevnMI448'
+
+headers = {'Content-Type': 'application/json', 'Accept':'application/json',
+'Kele-ThirdParty-Authority':token,
+'Kele-ThirdParty-Sign':sign
+}
+
+r_json = requests.get(url,params=params,headers=headers)
+print(r_json.text)
+
+```
 
 ## 用户质押总览
 #### GET [/eth2/v2/miner/dashboard](https://test-api.kelepool.com/eth2/v2/miner/dashboard?address=0x5dd3bd08cbc8498c8640abc26d19480219bb0606&interval=day)
